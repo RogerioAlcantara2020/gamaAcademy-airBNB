@@ -1,0 +1,238 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airBNB - Clone - Gama Academy</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloResponsivo.css.css">
+</head>
+
+<body>
+    <nav id="menuPrincipal">
+        <div class="cxLogo">
+            <div class="logo"><img src="imagens/logo-airBNB.png" width="100px"></div>
+        </div>
+
+        <div id="buscaTopo">
+            <button class="linkBusca"onclick="abrePesquisa()"> Adicionarl Local</button>
+            <button class="linkBusca" onclick="abrePesquisa()">Insira as datas </button>
+            <button class="linkBusca"onclick="abrePesquisa()"> Insira número de hóspedes</button>
+            <a href="busca.html"><img src="imagens/lupa.png" class="lupaRosa"></a>
+        </div>
+
+        <div id="pais">
+            <div class="regiao"><a href="#"><i class="fas fa-globe"></i>&nbsp; Português BR</a></div>
+            <div class="regiao"><a href="#">R$ BRL </a></div>
+        </div>
+
+        <ul>
+            <li><a href="#" onclick="menuRegiao()">
+                    <i class="fas fa-globe"></i>&nbsp;<img src="imagens/arrowDown.png" width="10px"></a></li>
+            <li><a href="#" id="link_acomodacao">Hospede em sua acomodação</a></li>
+            <li><a href="#" id="link_experiencia">Hospede uma experiência</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#" class="menuProvisorio">Entrar</a></li>
+            <a href="#" class="destaqueCadastro">Cadastre-se</a>
+        </ul>
+    </nav>
+    <div id='pesquisa' class="painelPesquisa">
+        <a href="#" class="linkPesquisa">Lugares para ficar</a><a href="#"></a>
+        <a href="#" class="linkPesquisa">Estadias longas </a>
+        <a href="#" class="linkPesquisa">Experiências</a>
+        <a href="#" class="linkPesquisa">Experiências Online</a><br>
+        <!-- <a href="#" onclick="fechaPesquisa()"><i id='fechar' class="fas fa-window-close"></i></a> -->
+ 
+        <div class="cxPesquisa">
+            <div class="boxPesquisaLocalizacao">
+                <b>LOCALIZAÇÃO</b><br>
+                <input type="text" class="cxBranca" placeholder="Para onde você vai?">
+            </div>
+            <div class="boxPesquisaLocalizacao">
+                <b>CHECKIN/CHECKOUT</b><br>
+                <input type="date" class="cxBranca" placeholder="Insira as datas">
+                <input type="date"  class="cxBranca" placeholder="Insira as datas">
+            </div>
+            <div class="boxPesquisaLocalizacao">
+                <b>HÓSPEDES</b><br>
+                <input type="text" class="cxBranca" placeholder="Insira os números de hóspedes">
+            </div>
+            <a href="busca.html"><input type="image" src="imagens/btnRosa.png" class="btnBuscar" /></a>
+        </div>
+    </div>
+
+    <div class="boasVindas">
+        Podemos estar afastados, mas<br> vamos superar isso juntos.
+    </div>
+
+    <div class="cartao">
+        <div class="item-cartao">
+            <div class="item-cartao-img"><img src="imagens/98457f94-ab6d-4249-b7f1-7152021aebe8.jpg.webp"
+                    class="item-cartao-img"></div>
+            <div class="item-cartao-titulo">Experiência Online</div>
+            <div class="item-cartao-descricao">Experiência Online</div>
+        </div>
+
+        <div class="item-cartao">
+            <div class="item-cartao-img"><img src="imagens/56e33ab9-d581-4333-be11-69286231cee5.jpg.webp"
+                    class="item-cartao-img"></div>
+            <div class="item-cartao-titulo">Estadias Longas</div>
+            <div class="item-cartao-descricao">Sinta-se em casa com Airbnb com estadias de um mês ou mais.</div>
+        </div>
+
+        <div class="item-cartao">
+            <div class="item-cartao-img"><img src="imagens/652b1058-209f-45f7-8383-f3e4d90ee302.jpg.webp"
+                    class="item-cartao-img"></div>
+            <div class="item-cartao-titulo">Informações Atualizadas</div>
+            <div class="item-cartao-descricao">Saiba mais sobre as ações que estamos tomando em relação ao COVI-19.
+            </div>
+        </div>
+    </div>
+
+    <div class="cartao-escuro">
+        <div class="cartao-escuro-descricao">
+            <b>Apresentamos as experiências online</b><br>
+            Agora você pode conhecer pessoas do mundo inteiro enquanto experimenta algo novo. <br>
+            Participe de sessões de vídeo interativas ao vivo oferecidas por anfitriões especialistas <br>
+            — tudo isso sem sair de casa.
+        </div>
+
+        <div class="cartao-escuro-descricao">
+            <button class="cartao-escuro-explore">Explore tudo</button>
+        </div>
+
+        <div class="item-cartao-escuro-grande">
+            <div class="item-cartao-escuro-img-grd"><img src="imagens/0049c173-7313-42c5-9330-543ed4cb8d7d.jpg.webp"
+                    class="item-cartao-escuro-img-grd"></div>
+            <div class="item-cartao-escuro-desc-grd"> <br>Prepare uma receita de sangria<br>
+                secreta com Pedro de Lisboa
+            </div>
+        </div>
+
+        <div class="item-cartao-escuro-pequeno"><img src="imagens/5bf46c77-4312-41b6-b9ad-66db5bbadd27.jpg.webp"
+                class="item-cartao-escuro-img-pequeno">
+            <div class="item-cartao-escuro-desc-peq">Alongue-se. Respire. Relaxe. <br>Aula de Ioga com amigos.</div>
+        </div>
+
+        <div class="item-cartao-escuro-pequeno"><img src="imagens/5bd2705a-a565-426e-b928-f2a2b581e717.jpg.webp"
+                class="item-cartao-escuro-img-pequeno">
+            <div class="item-cartao-escuro-desc-peq">Medite ao som da música <br>com Janise, de Amsterdã </div>
+
+
+            <div class="item-cartao-escuro-medio">
+                <div class="item-cartao-escuro-img-md"><img src="imagens/af46112a-b342-45bb-89b0-57fce44e110c.jpg.webp"
+                        class="item-cartao-escuro-img-md"></div>
+                <div class="item-cartao-escuro-desc-md">Desenhe com Jon e ajude os <br>pinguins africanos</div>
+            </div>
+
+        </div>
+
+        <div class="fique-por-dentro">
+            <div class="titulo-fique-por-dentro">Fique por dentro</div>
+            <div class="descricao-fique-por-dentro">Para Hóspedes</div>
+            <div class="descricao-fique-por-dentro">Para Anfitriãos</div>
+            <div class="descricao-fique-por-dentro">Para pessoas combatendo COVID-19</div>
+            <div class="descricao-fique-por-dentro">Mais</div>
+
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Atualização sobre viagens</b><br>
+                    o que você deve fazer</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Mensagem de Brian Chesky</b><br>
+                    Mensagem do nosso CEO</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Acomodações na linha de frente</b><br>
+                    Saiba mais sobre o programa</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Sala de impressa do Airbnb</b><br>
+                    Últimas informações</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Opções de cancelamento</b><br>
+                    Saiba o que está coberto</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Recursos para hospedagem</b><br>
+                    Como mitigar os efeitos da COVI-19</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Cadastre-se</b><br>
+                    Consulte as opções de acomodação</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Organização Mundia da Saúde</b><br>
+                    Recomendações e atualizações</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Centro de Ajuda</b><br>
+                    Ajuda</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Ofereça acomodações na linha de frente</b><br>
+                    Saiba como ajudar</a>
+            </div>
+            <div class="descricao-fique-por-dentro">
+                <a href="#" class="link-fique"> <b>Faça uma doação</b><br>
+                    Apoie organizações sem fim lucrativos</a>
+            </div>
+
+        </div>
+
+
+        <div class="resumo">
+            <div class="cards-sobre-item"><b>SOBRE</b><br><bR>
+                <a href="#" class="cards-item"> Diversidade e pertencimento<br><br></a>
+                <a href="#" class="cards-item"> Acessibilidade<br><br></a>
+                <a href="#" class="cards-item"> Confiança<br><br></a>
+                <a href="#" class="cards-item"> Airbnb Citzen<br><br></a>
+                <a href="#" class="cards-item"> Newsroom<br><br></a>
+            </div>
+            <div class="cards-sobre-item"><b>Comunidade</b><br><bR>
+                <a href="#" class="cards-item"> Airbnb Magazine<br><br></a>
+                <a href="#" class="cards-item"> Airbnb for Work<br><br></a>
+                <a href="#" class="cards-item"> Convide amigos<br><br></a>
+                <a href="#" class="cards-item"> Airbnb Citzen<br><br></a>
+                <a href="#" class="cards-item"> Carreiras<br><br></a>
+            </div>
+            <div class="cards-sobre-item"><b>Anfitrião</b><br><bR>
+                <a href="#" class="cards-item">Hospede em sua acomodação <br><br></a>
+                <a href="#" class="cards-item">Ofereça uma experiência <br><br></a>
+                <a href="#" class="cards-item">Hospedagem responsável<br><br></a>
+                <a href="#" class="cards-item">Open Homes<br><br></a>
+                <a href="#" class="cards-item">Olimpíadas <br><br></a>
+                <a href="#" class="cards-item">Central de Recursos <br><br></a>
+            </div>
+            <div class="cards-sobre-item"><b>Atendimento</b><br><bR>
+                <a href="#" class="cards-item">Central de Ajuda <br><br></a>
+                <a href="#" class="cards-item">Atendimento ao Bairro <br><br></a>
+            </div>
+
+            <div class="rodape"><br>
+
+                <div class="regiao-rodape">© 2020 Airbnb, Inc. All rights reserved ·Privacidade·Termos·Mapa do site
+                    <a href="idioma.html" class="direita"><i class="fas fa-globe"></i>&nbsp; Português BR</a>
+                    <a href="moeda.html" class="direita">R$ BRL </a>
+
+                    <i class="fab fa-facebook-f 3x"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        <script src="https://kit.fontawesome.com/d22cd639ed.js" crossorigin="anonymous"></script>
+        <script src="js/vanilla.js"></script>
+ </body>
+
+</html>
