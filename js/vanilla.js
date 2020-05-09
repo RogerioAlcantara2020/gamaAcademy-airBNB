@@ -40,10 +40,12 @@ window.addEventListener('scroll',function(){
 function abrePesquisa(){
     document.getElementById('pesquisa').classList.add('painelPesquisaRolou');
     document.getElementById('pesquisa').style.display = 'block';
+    document.getElementById('fechar').style.display = 'block';
     document.getElementById('pesquisa').classList.remove('painelPesquisa');
 }
 function fechaPesquisa(){
-    ocument.getElementById('pesquisa').classList.add('painelPesquisa');
+     // ocument.getElementById('pesquisa').classList.add('painelPesquisa');
     document.getElementById('pesquisa').style.display = 'none';
-    document.getElementById('pesquisa').classList.remove('painelPesquisaRolou');
+    document.getElementById('fechar').style.display = 'none';
+    // document.getElementById('pesquisa').classList.remove('painelPesquisaRolou');
     }

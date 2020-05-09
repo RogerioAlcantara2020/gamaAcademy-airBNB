@@ -158,6 +158,10 @@ div.regiao:hover{
     padding: 60px;
     background-color: #fff;
 }
+#fechar a{
+    display: none;
+    color: #333;
+}
 
 .linkPesquisa{
     float: left;
