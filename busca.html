@@ -52,15 +52,17 @@
                 <input type="text" class="cxBranca" placeholder="Para onde você vai?">
             </div>
             <div class="boxPesquisaLocalizacao">
+                <form action="busca.html" method="POST" id='frm-bsc' onsubmit="calcular()">
                 <b>CHECKIN/CHECKOUT</b><br>
-                <input type="date" class="cxBranca" name="checkin" placeholder="Insira as datas">
-                <input type="date"  class="cxBranca"  name="checkout" placeholder="Insira as datas">
+                <input type="date" class="cxBranca"  id="checkin" placeholder="Insira as datas">
+                <input type="date"  class="cxBranca"  id="checkout" placeholder="Insira as datas">
             </div>
             <div class="boxPesquisaLocalizacao">
                 <b>HÓSPEDES</b><br>
                 <input type="text" class="cxBranca" placeholder="Insira os números de hóspedes">
             </div>
-            <a href="busca.html"><input type="image" src="imagens/btnRosa.png" class="btnBuscar" /></a>
+            <input type="image" src="imagens/btnRosa.png" class="btnBuscar" />
+        </form>
         </div>
     </div>
     </div>
